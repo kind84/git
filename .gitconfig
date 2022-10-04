@@ -1,0 +1,21 @@
+[user]
+	email = paolo_g84@icloud.com
+	name = Paolo Grisoli
+[core]
+	editor = vim
+	autocrlf = false
+	excludesfile = ~/.gitignore
+[pull]
+	rebase = merges
+[rerere]
+	enabled = true
+
+[diff "sopsdiffer"]
+	textconv = sops -d
+
+[includeIf "gitdir:~/src/keeneye/"]
+	path = ~/src/keeneye/.gitconfig
+[http]
+	cookiefile = /home/paolo/.gitcookies
+[init]
+	defaultBranch = master
